@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Mi Rapunzel ✨</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="lanterns-container" id="lanterns"></div>
+
+  <main class="card">
+    <div class="sun-icon">
+      <svg viewBox="0 0 100 100" class="sun-svg">
+        <circle cx="50" cy="50" r="20" fill="gold" />
+        <g stroke="gold" stroke-width="3" stroke-linecap="round">
+          <line x1="50" y1="15" x2="50" y2="5" />
+          <line x1="50" y1="85" x2="50" y2="95" />
+          <line x1="15" y1="50" x2="5" y2="50" />
+          <line x1="85" y1="50" x2="95" y2="50" />
+          <line x1="25" y1="25" x2="18" y2="18" />
+          <line x1="75" y1="75" x2="82" y2="82" />
+          <line x1="25" y1="75" x2="18" y2="82" />
+          <line x1="75" y1="25" x2="82" y2="18" />
+        </g>
+      </svg>
+    </div>
+
+    <h1 class="title">Mi Nuevo Sueño</h1>
+    <p class="subtitle">Y por fin se ve la luz... ✨</p>
+
+    <div class="divider"></div>
+
+    <article class="letter-content">
+      <p class="greeting">Hola, mi niña hermosa,</p>
+      
+      <p>
+        Siempre pensé que las historias sobre encontrar a alguien con quien todo cobrara sentido eran solo eso, cuentos de hadas. Pero entonces llegaste tú y cambiaste completamente mi mundo.
+      </p>      
+      <p>
+        Así como Rapunzel vio el cielo llenarse de luces y entendió que el universo era mucho más grande y hermoso de lo que imaginaba, para mí tú eres esa luz. Contigo no hay días oscuros; estar a tu lado es sentir que finalmente estoy en el lugar correcto.
+      </p>
+
+      <blockquote class="quote">
+        "Y al mirarte puedo ver que al fin se aclara la niebla... Y al mirarte puedo ver que mi nuevo sueño eres tú."
+      </blockquote>
+
+      <p>
+        Gracias por traer tanto color, risas y magia a mi vida. Hay algo importante que quiero preguntarte...
+      </p>
+
+      <p class="signature">Con todo mi amor, <br><span>Tu novio ❤️</span></p>
+    </article>
+
+    <div class="action-area">
+      <a href="{{ url_for('propuesta') }}" class="btn-primary">Siguiente página ➔</a>
+    </div>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
